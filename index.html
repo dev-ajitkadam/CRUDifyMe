@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD FROM API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto: wght@300; 400&display=swaprel=" stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-mynav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CRUD</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto p-2 bd-highlight">
+                <h2>Users
+            </div>
+            <div class="p-2 bd-highlight">
+                <button type="button" class="btn btn-secondary" onclick="showUserCreateBox()">Create</button>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Avatar</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="mytable">
+                    <tr>
+                        <th scope="row" colspan="5">Loading...</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js" integrity="sha512-sH8JPhKJUeA9PWk3eOcOl8U+lfZTgtBXD41q6cO/slwxGHCxKcW45K4oPCUhHG7NMB4mbKEddVmPuTXtpbCbFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
